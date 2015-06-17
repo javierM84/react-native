@@ -11,7 +11,7 @@
 var transformer = require('../packager/transformer.js');
 
 function transformSource(src, filename) {
-  return transformer.transform(src, filename).code;
+  return transformer.transform(src, filename, undefined, true).code;
 }
 
 module.exports = {
